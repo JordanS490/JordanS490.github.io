@@ -2,9 +2,22 @@
 <html lang="en">
   <head>
     <style>
-    img {
-        border-radius: 50%;
-        }
+    img.profile-pic {
+      border-radius: 50%;
+      width: 100px;
+      height: 120px;
+      transition: transform 0.3s ease;
+    }
+
+    img.hobbies{
+      border-radius: 30%;
+      width: 240px;
+      height: 200px;
+    }
+
+    img.profile-pic:hover {
+      transform: scale(2.0);
+    }
     </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -27,8 +40,7 @@
       <h3>
         <a href="https://jordans490.github.io/" class="link"
           >JS.</a
-        >
-        <img src="profile.jpg" alt="professional profile photo"> 
+        > 
       </h3>
 
       <nav class="nav center">
@@ -41,6 +53,9 @@
           </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#hobbies">Hobbies</a>
           </li>
         </ul>
 
@@ -58,6 +73,9 @@
       </nav>
     </header>
 
+    <div class = "about center">
+      <h><img src="profile.jpg" alt="professional profile photo" class="profile-pic"></h>
+    </div>
     <main>
       <!-- About -->
       <div class="about center">
@@ -123,6 +141,16 @@
                and newly branded merchandise all within the predetermined budget.
             </p>
           </div>
+
+          <div class="project">
+            <h3>Project 4</h3>
+            <p class="project__description">
+              I developed a program that scrapes a news website and returns
+              a statement regarding the sentiment of each article's title. It
+              will return "Positive", "Negative", or "Neutral" based on the message.
+              It's great for collecting data on the bias and tone of the news site!
+            </p>
+          </div>
         </div>
       </section>
 
@@ -144,11 +172,46 @@
         </ul>
       </section>
 
+      <!---Hobbies--->
+      <section class="section projects" id="hobbies">
+        <div class="project">
+          <div class = "about center">
+            <h><img src="tea.jpg" alt="two lattes" class="hobbies"></h>
+          </div>
+          <h3 style="color: rgb(255, 111, 135);">Tea</h3>
+          <p class="project__description">
+            I love all things related to coffee and tea. I collect tea cups, 
+            host tea parties, and explore local coffee shops. My favorite hot beverage,
+             but I will always try a specialty or seasonal pick!
+          </p>
+        </div>
+
+        <div class="project">
+          <h><img src="antique.jpg" alt="frog statue" class="hobbies"></h>
+          <h3 style="color: rgb(255, 111, 135);">Antiques</h3>
+          <p class="project__description">
+            I really enjoy going to antique malls with my friends and family. There
+            is nothing like history that you can touch. You never know what you will
+            find! This is a picture of one of my favorite picks!
+          </p>
+        </div>
+
+        <div class="project">
+          <h><img src="park.jpg" alt="professional profile photo" class="hobbies"></h>
+          <h3 style="color: rgb(255, 111, 135);">Hiking</h3>
+          <p class="project__description">
+            When the weather is nice, I like to take short hikes around the St. Louis area.
+             There are some beautiful places with some great views an well kept parks. 
+             Pere Marquette is one of my favorites!
+          </p>
+        </div>
+      </section>
+
       <!-- Contact -->
       <section class="section contact center" id="contact">
         <h2 class="section__title">Contact</h2>
-        <a href="mailto:jordanstaggs67@gmail.com">
-          <span class="btn btn--outline">Email me</span>
+        <a href="https://www.linkedin.com/in/jordan-elizabeth-staggs-75357b32a/">
+          <span class="btn btn--outline">LinkedIn</span>
         </a>
       </section>
     </main>
